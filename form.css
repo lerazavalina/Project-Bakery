@@ -1,0 +1,76 @@
+
+
+* {
+    box-sizing: border-box;
+}
+.h1 {
+    font-family: 'Ultra';
+    font-size: 40px;
+    font-weight: 400;
+    color: #000000;
+}
+
+.container {
+    background-color: #FBB65F;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    align-items: center;
+    font-family: 'Oswald';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+}
+.col-1 {
+    float: left;
+    width: 25%;
+    margin-top: 8px;
+    align-items: center;
+    font-family: 'Oswald';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+}
+.col-2 {
+    float: left;
+    width: 75%;
+    margin-top: 8px;
+    align-items: center;
+    font-family: 'Oswald';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+}
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+label {
+    display: inline-block;
+    padding: 10px 10px 10px 0; /*clearfix*/
+}
+input[type=submit] {
+    background-color: rgb(255, 255, 255);
+    color:#FBB65F;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 15px;
+    float: right; /*clearfix*/
+}
+
+/* Clear floats - clearfix */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+@media screen and (max-width: 750px) {
+    .col-1, .col-2, input[type=submit] {
+        width: 100%;
+    }
+}
